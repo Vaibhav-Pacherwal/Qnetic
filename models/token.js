@@ -9,7 +9,7 @@ main()
 });
 
 async function main() {
-    mongoose.connect(process.env.MONGODB);
+    await mongoose.connect(process.env.MONGODB);
 }
 
 const tokenSchema = new mongoose.Schema({

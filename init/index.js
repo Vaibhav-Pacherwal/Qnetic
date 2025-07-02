@@ -8,7 +8,7 @@ const Token = require("../models/token.js");
 require("dotenv").config();
 
 async function main() {
-    mongoose.connect(process.env.MONGODB);
+    await mongoose.connect(process.env.MONGODB);
 }
 
 async function initData() {

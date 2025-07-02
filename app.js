@@ -14,6 +14,7 @@ const Admin = require("./models/Admin.js");
 const QRCode = require("qrcode");
 const Customer = require("./models/customer.js")
 const Token = require("./models/token.js");
+const session = require("express-session");
 
 const port = process.env.PORT || 8080;
 server.listen(port, ()=>{
@@ -45,6 +46,15 @@ app.use(methodOverride("_method"));
 app.set("views", path.join(__dirname, "/views"));
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({extended:true}));
+app.use(session({
+    secret: process.env.SESSION_SECRET,
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+        secure: false,
+        maxAge: 1000 * 60 * 60 * 24
+    }
+}));
 
 io.on("connection", (socket) => {
     console.log("A user connected");

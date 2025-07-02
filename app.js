@@ -220,7 +220,7 @@ app.get("/generate-QR/:id", async (req, res)=>{
         }
         let outletName = details.outlet;
         const safeOutletName = `${outletName}`.replace(/[^a-zA-Z0-9_-]/g, '_');
-        let url = `https://qnetic-2.onrender.com/qnetic/${outletName}/customer-details`;
+        let url = `https://qnetic-3.onrender.com/qnetic/${outletName}/customer-details`;
         QRCode.toBuffer(url, { type: 'png' }, (err, buffer) => {
             if (err) return res.send("QR failed");
 

@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+  cursor: url("/images/custom-cursor.png"),auto;
+  background-color: rgb(243, 253, 220);
+  background-image: radial-gradient(#CDE7A6 2px, transparent 3px);
+  background-size: 30px 30px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    padding: 0.5rem;
+}
+
+.signup-form {
+    height: auto;
+    width: 90%;
+    max-width: 450px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    background: #f9fff0;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.signup-form .logo {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.signup-form .logo img {
+    height: 60px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+    color: #333;
+}
+
+ input {
+    padding: 0.6rem 1rem;
+    border: 1px solid #ccc;
+    border-left: 2px solid #ccc;
+    border-radius: 12px;
+    margin-bottom: 0.5rem;
+}
+
+input:focus{
+    border-color: #85c86f;
+    outline: none;
+    background-color: #f4fff2;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #54c369;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.submit-btn:hover {
+    background-color: #46aa57;
+    cursor: url("/images/custom-cursor.png"),auto;
+}
+
+h2 {
+    align-self: center;
+}
+
+ a {
+    color: black;
+    align-self: center;
+    text-decoration: none;
+    transform: translateY(5px);
+    margin-bottom: 0.5rem;
+}
+
+a:hover {
+    cursor: url("/images/custom-cursor.png"),auto;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: black;
+}
+
+footer {
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    padding: 12px;
+    background-color: #212529;
+    color: white;
+    text-align: center;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.links .fa-brands {
+  font-size: 1.5rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: 1px white underline;
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+.emailVerify {
+    height: 100vh;
+    transform: translateY(-9%);
+}

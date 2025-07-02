@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    cursor: url("/images/custom-cursor.png"),auto;
+}
+
+body {
+  cursor: url("/images/custom-cursor.png"),auto;
+  background-color: rgb(243, 253, 220);
+  background-image: radial-gradient(#CDE7A6 2px, transparent 3px);
+  background-size: 30px 30px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.emailVerify {
+    height: 100vh;
+    transform: translateY(-9%);
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    transform: translateY(-0.7rem);
+    cursor: url("/images/custom-cursor.png"),auto;
+}
+
+.navbar {
+    cursor: url("/images/white-custom-cursor.png"),auto;
+    z-index: 1;
+}
+
+.container-fluid {
+    cursor: url("/images/white-custom-cursor.png"),auto;
+}
+
+.dropdown-item {
+      &:hover {
+          cursor: url("/images/custom-cursor.png"),auto;
+        color: black;
+        transition: background-color 0.3s, color 0.3s;
+        transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    }
+    &:active {
+        .btn-custom.active {
+        background-color: #1dd1a1;
+        color: white;
+        transform: scale(0.98);
+        }
+    }
+}
+
+.genqr {
+    bottom: 3rem;
+    right: 3rem;
+    position: fixed;
+    z-index: 1;
+}
+
+.generate-btn {
+    width: 11rem;
+    padding: 0.75rem;
+    background-color: #212529;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+    cursor: url("/images/white-custom-cursor.png"),auto;
+}
+
+.generate-btn:hover {
+  cursor: url("/images/custom-cursor.png"),auto;
+  background-color: #10ac84;
+  transform: scale(1.05);
+}
+
+.qrcode {
+    background-color: rgb(243, 253, 220);
+    background-image: radial-gradient(#CDE7A6 2px, transparent 3px);
+    background-size: 30px 30px;
+}
+
+footer {
+    width: 100vw;
+    left: 0;
+    bottom: 0;
+    position: relative;
+    padding: 12px;
+    background-color: #212529;
+    color: white;
+    text-align: center;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.links .fa-brands {
+  font-size: 1.5rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: 1px white underline;
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+.records {
+    height: 100vh;
+    width: 100vw;
+    padding: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.token-card {
+  width: 350px;
+  height: 320px;
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.token-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #222;
+    background: #54a0ff;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.details {
+    text-align: left;
+    font-size: 0.95rem;
+    margin-top: 10px;
+   color: #444;
+}
+
+.details p {
+    margin: 6px 0;
+}

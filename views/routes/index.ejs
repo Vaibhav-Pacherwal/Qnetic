@@ -1,0 +1,39 @@
+<% layout('/layouts/boilerplate') -%>
+<body>
+    <section class="hero">
+    <div class="info-box top-left">
+      <strong>📲 Scan to Simplify</strong><br>
+      Say goodbye to standing in long lines. Just scan and track your spot with ease!
+    </div>
+
+    <div class="info-box top-right">
+      <strong>🛡️ Secure & Instant</strong><br>
+      End-to-end encrypted QR scanning. Your privacy is always protected.
+    </div>
+
+    <div class="center-image">
+      <img src="/images/qr-scan.png" alt="QR Scan Illustration" />
+    </div>
+
+    <div class="info-box bottom-left">
+      <strong>📢 Real-time Alerts</strong><br>
+      Get notified instantly when your turn is near. No more waiting around!
+    </div>
+
+    <div class="info-box bottom-right">
+      <strong>⚡ Smarter Queues</strong><br>
+      Save time, reduce stress, and optimize operations for users and staff.
+    </div>
+
+    <div class="cta-container">
+      <button class="cta-button">🚀 Create Account</button>
+    </div>
+  </section>
+</body>
+
+<script>
+    let btn = document.querySelector(".cta-container");
+    btn.addEventListener('click', ()=>{
+        window.location.href = "/new-user";
+    });
+</script>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qnetic | SignUp</title>
+    <link rel="stylesheet" href="/css/signup.css">
+    <link rel="icon" href="/images/queue.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Cc2zYbqK8HjUQZ+u7H0TPMS7jFiJhbgPBHdqlfhWa7Tgtu3o0K0l0Rt3HyNsI8FH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section>
+        <div class="container">
+        <div class="center-image">
+            <img src="/images/signup.png" alt="QR Scan Illustration" />
+        </div>
+        <form class="signup-form" action="/qnetic/adduser" method="post">
+            <div class="logo">
+                <img src="/images/queue.png" alt="Qnetic">
+            </div>
+
+            <div class="input-group">
+                <label for="fname">👤 First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="e.g., John" required>
+            </div>
+
+            <div class="input-group">
+                <label for="lname">👤 Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="e.g., Doe" required>
+            </div>
+
+            <div class="input-group">
+                <label for="username">🆔 Username</label>
+                <input type="text" id="username" name="username" placeholder="@johnny123" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">📧 Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="input-group">
+                <label for="purpose">🏢 Select Purpose</label>
+                <select id="purpose" name="purpose">
+                    <option selected disabled>Choose your outlet type</option>
+                    <option value="1">🩺 Clinic</option>
+                    <option value="2">💇 Salon</option>
+                    <option value="3">🛒 Grocery Store</option>
+                    <option value="4">👗 Clothing Outlet</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="outlet">🏪 Outlet/Business Name</label>
+                <input type="text" id="outlet" name="outlet" placeholder="e.g., Bloom Salon" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">🔒 Password</label>
+                <input type="password" id="password" name="password" placeholder="Create a strong password" required>
+            </div>
+
+            <div class="input-group">
+                <label for="confirm-password">🔒 Confirm Password</label>
+                <input type="password" id="confirm-password" name="cpassword" placeholder="Re-enter your password" required>
+            </div>
+
+            <button type="submit" class="submit-btn">🚀 Create Account</button>
+        </form>
+    </section>
+
+    <%- include('../includes/footer.ejs') %>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+</html>

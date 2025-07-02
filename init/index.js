@@ -8,7 +8,10 @@ const Token = require("../models/token.js");
 require("dotenv").config();
 
 async function main() {
-    await mongoose.connect(process.env.MONGODB);
+    await mongoose.connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+    })
 }
 
 async function initData() {

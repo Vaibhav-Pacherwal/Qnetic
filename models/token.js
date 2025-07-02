@@ -9,7 +9,10 @@ main()
 });
 
 async function main() {
-    await mongoose.connect(process.env.MONGODB);
+    await mongoose.connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  })
 }
 
 const tokenSchema = new mongoose.Schema({

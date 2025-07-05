@@ -16,7 +16,7 @@ const Customer = require("./models/customer.js")
 const Token = require("./models/token.js");
 const session = require("express-session");
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT;
 server.listen(port, ()=>{
     console.log(`server is running on http://localhost:${port}`);
 });
